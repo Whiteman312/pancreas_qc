@@ -1,0 +1,28 @@
+# Conda environment for the first-version CURVAS/QUBIQ experiment.
+# Create with: conda env create -f config/experiment_environment.yml
+# GPU stack verified on an RTX 4090 with NVIDIA driver 535.288.01.
+# The PyTorch CUDA 12.1 wheels also provide the required CUDA runtime libraries.
+name: pancreas_qc
+channels:
+  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge
+dependencies:
+  - python=3.11
+  - pip
+  - pip:
+      - --extra-index-url https://download.pytorch.org/whl/cu121
+      - torch==2.5.1+cu121
+      - torchvision==0.20.1+cu121
+      - nnunetv2
+      - monai==1.5.1
+      - nibabel
+      - SimpleITK
+      - numpy
+      - scipy
+      - scikit-image
+      - scikit-learn
+      - pandas
+      - pyyaml
+      - tensorboard
+      - tqdm
+      - matplotlib
+      - seaborn
