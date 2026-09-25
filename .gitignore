@@ -6,6 +6,8 @@ __pycache__/
 
 # Large, generated, or private experiment data.
 data/raw/**
+data/extracted/**
+data/derived/**
 data/interim/**
 data/processed/**
 artifacts/**
