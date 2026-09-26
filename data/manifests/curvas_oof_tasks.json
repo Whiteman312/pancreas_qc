@@ -1,0 +1,622 @@
+{
+  "schema_version": 1,
+  "split_manifest": "data/manifests/curvas_patient_split.json",
+  "split_sha256": "3660d71c9db5d7f407f3649d49fb3a2c1be87feb28588e160a70aa9c74a5a316",
+  "staging_dataset": "data/nnunet_raw/Dataset501_CURVASPancreasOOF",
+  "staging_export_manifest": "data/manifests/curvas_nnunet_export.csv",
+  "staging_export_sha256": "425f7de3c430d9b211e823d7449bb2943709c7aab37fd2a3fa599287e5265378",
+  "link_mode": "relative_symlink",
+  "training_fold": "all",
+  "tasks": [
+    {
+      "fold": 0,
+      "dataset_id": 511,
+      "dataset_name": "CURVASPancreasOOF_Fold0",
+      "dataset_dir": "data/nnunet_raw/Dataset511_CURVASPancreasOOF_Fold0",
+      "numTraining": 48,
+      "numHeldOut": 12,
+      "train": [
+        "UKCHLL001",
+        "UKCHLL008",
+        "UKCHLL010",
+        "UKCHLL018",
+        "UKCHLL021",
+        "UKCHLL023",
+        "UKCHLL025",
+        "UKCHLL026",
+        "UKCHLL028",
+        "UKCHLL030",
+        "UKCHLL031",
+        "UKCHLL032",
+        "UKCHLL034",
+        "UKCHLL035",
+        "UKCHLL038",
+        "UKCHLL041",
+        "UKCHLL043",
+        "UKCHLL045",
+        "UKCHLL049",
+        "UKCHLL051",
+        "UKCHLL052",
+        "UKCHLL055",
+        "UKCHLL058",
+        "UKCHLL062",
+        "UKCHLL064",
+        "UKCHLL066",
+        "UKCHLL070",
+        "UKCHLL073",
+        "UKCHLL076",
+        "UKCHLL077",
+        "UKCHLL078",
+        "UKCHLL083",
+        "UKCHLL084",
+        "UKCHLL087",
+        "UKCHLL091",
+        "UKCHLL092",
+        "UKCHLL094",
+        "UKCHLL095",
+        "UKCHLL099",
+        "UKCHLL102",
+        "UKCHLL103",
+        "UKCHLL104",
+        "UKCHLL105",
+        "UKCHLL106",
+        "UKCHLL107",
+        "UKCHLL108",
+        "UKCHLL110",
+        "UKCHLL112"
+      ],
+      "held_out": [
+        "UKCHLL005",
+        "UKCHLL007",
+        "UKCHLL009",
+        "UKCHLL027",
+        "UKCHLL042",
+        "UKCHLL048",
+        "UKCHLL067",
+        "UKCHLL069",
+        "UKCHLL089",
+        "UKCHLL096",
+        "UKCHLL111",
+        "UKCHLL113"
+      ],
+      "held_out_inputs": [
+        {
+          "case_id": "UKCHLL005",
+          "image": "data/nnunet_raw/Dataset501_CURVASPancreasOOF/imagesTr/UKCHLL005_0000.nii.gz"
+        },
+        {
+          "case_id": "UKCHLL007",
+          "image": "data/nnunet_raw/Dataset501_CURVASPancreasOOF/imagesTr/UKCHLL007_0000.nii.gz"
+        },
+        {
+          "case_id": "UKCHLL009",
+          "image": "data/nnunet_raw/Dataset501_CURVASPancreasOOF/imagesTr/UKCHLL009_0000.nii.gz"
+        },
+        {
+          "case_id": "UKCHLL027",
+          "image": "data/nnunet_raw/Dataset501_CURVASPancreasOOF/imagesTr/UKCHLL027_0000.nii.gz"
+        },
+        {
+          "case_id": "UKCHLL042",
+          "image": "data/nnunet_raw/Dataset501_CURVASPancreasOOF/imagesTr/UKCHLL042_0000.nii.gz"
+        },
+        {
+          "case_id": "UKCHLL048",
+          "image": "data/nnunet_raw/Dataset501_CURVASPancreasOOF/imagesTr/UKCHLL048_0000.nii.gz"
+        },
+        {
+          "case_id": "UKCHLL067",
+          "image": "data/nnunet_raw/Dataset501_CURVASPancreasOOF/imagesTr/UKCHLL067_0000.nii.gz"
+        },
+        {
+          "case_id": "UKCHLL069",
+          "image": "data/nnunet_raw/Dataset501_CURVASPancreasOOF/imagesTr/UKCHLL069_0000.nii.gz"
+        },
+        {
+          "case_id": "UKCHLL089",
+          "image": "data/nnunet_raw/Dataset501_CURVASPancreasOOF/imagesTr/UKCHLL089_0000.nii.gz"
+        },
+        {
+          "case_id": "UKCHLL096",
+          "image": "data/nnunet_raw/Dataset501_CURVASPancreasOOF/imagesTr/UKCHLL096_0000.nii.gz"
+        },
+        {
+          "case_id": "UKCHLL111",
+          "image": "data/nnunet_raw/Dataset501_CURVASPancreasOOF/imagesTr/UKCHLL111_0000.nii.gz"
+        },
+        {
+          "case_id": "UKCHLL113",
+          "image": "data/nnunet_raw/Dataset501_CURVASPancreasOOF/imagesTr/UKCHLL113_0000.nii.gz"
+        }
+      ]
+    },
+    {
+      "fold": 1,
+      "dataset_id": 512,
+      "dataset_name": "CURVASPancreasOOF_Fold1",
+      "dataset_dir": "data/nnunet_raw/Dataset512_CURVASPancreasOOF_Fold1",
+      "numTraining": 48,
+      "numHeldOut": 12,
+      "train": [
+        "UKCHLL001",
+        "UKCHLL005",
+        "UKCHLL007",
+        "UKCHLL008",
+        "UKCHLL009",
+        "UKCHLL018",
+        "UKCHLL021",
+        "UKCHLL023",
+        "UKCHLL025",
+        "UKCHLL026",
+        "UKCHLL027",
+        "UKCHLL028",
+        "UKCHLL030",
+        "UKCHLL031",
+        "UKCHLL032",
+        "UKCHLL035",
+        "UKCHLL038",
+        "UKCHLL041",
+        "UKCHLL042",
+        "UKCHLL048",
+        "UKCHLL049",
+        "UKCHLL051",
+        "UKCHLL052",
+        "UKCHLL055",
+        "UKCHLL058",
+        "UKCHLL062",
+        "UKCHLL064",
+        "UKCHLL066",
+        "UKCHLL067",
+        "UKCHLL069",
+        "UKCHLL077",
+        "UKCHLL078",
+        "UKCHLL083",
+        "UKCHLL084",
+        "UKCHLL087",
+        "UKCHLL089",
+        "UKCHLL092",
+        "UKCHLL094",
+        "UKCHLL096",
+        "UKCHLL102",
+        "UKCHLL104",
+        "UKCHLL106",
+        "UKCHLL107",
+        "UKCHLL108",
+        "UKCHLL110",
+        "UKCHLL111",
+        "UKCHLL112",
+        "UKCHLL113"
+      ],
+      "held_out": [
+        "UKCHLL010",
+        "UKCHLL034",
+        "UKCHLL043",
+        "UKCHLL045",
+        "UKCHLL070",
+        "UKCHLL073",
+        "UKCHLL076",
+        "UKCHLL091",
+        "UKCHLL095",
+        "UKCHLL099",
+        "UKCHLL103",
+        "UKCHLL105"
+      ],
+      "held_out_inputs": [
+        {
+          "case_id": "UKCHLL010",
+          "image": "data/nnunet_raw/Dataset501_CURVASPancreasOOF/imagesTr/UKCHLL010_0000.nii.gz"
+        },
+        {
+          "case_id": "UKCHLL034",
+          "image": "data/nnunet_raw/Dataset501_CURVASPancreasOOF/imagesTr/UKCHLL034_0000.nii.gz"
+        },
+        {
+          "case_id": "UKCHLL043",
+          "image": "data/nnunet_raw/Dataset501_CURVASPancreasOOF/imagesTr/UKCHLL043_0000.nii.gz"
+        },
+        {
+          "case_id": "UKCHLL045",
+          "image": "data/nnunet_raw/Dataset501_CURVASPancreasOOF/imagesTr/UKCHLL045_0000.nii.gz"
+        },
+        {
+          "case_id": "UKCHLL070",
+          "image": "data/nnunet_raw/Dataset501_CURVASPancreasOOF/imagesTr/UKCHLL070_0000.nii.gz"
+        },
+        {
+          "case_id": "UKCHLL073",
+          "image": "data/nnunet_raw/Dataset501_CURVASPancreasOOF/imagesTr/UKCHLL073_0000.nii.gz"
+        },
+        {
+          "case_id": "UKCHLL076",
+          "image": "data/nnunet_raw/Dataset501_CURVASPancreasOOF/imagesTr/UKCHLL076_0000.nii.gz"
+        },
+        {
+          "case_id": "UKCHLL091",
+          "image": "data/nnunet_raw/Dataset501_CURVASPancreasOOF/imagesTr/UKCHLL091_0000.nii.gz"
+        },
+        {
+          "case_id": "UKCHLL095",
+          "image": "data/nnunet_raw/Dataset501_CURVASPancreasOOF/imagesTr/UKCHLL095_0000.nii.gz"
+        },
+        {
+          "case_id": "UKCHLL099",
+          "image": "data/nnunet_raw/Dataset501_CURVASPancreasOOF/imagesTr/UKCHLL099_0000.nii.gz"
+        },
+        {
+          "case_id": "UKCHLL103",
+          "image": "data/nnunet_raw/Dataset501_CURVASPancreasOOF/imagesTr/UKCHLL103_0000.nii.gz"
+        },
+        {
+          "case_id": "UKCHLL105",
+          "image": "data/nnunet_raw/Dataset501_CURVASPancreasOOF/imagesTr/UKCHLL105_0000.nii.gz"
+        }
+      ]
+    },
+    {
+      "fold": 2,
+      "dataset_id": 513,
+      "dataset_name": "CURVASPancreasOOF_Fold2",
+      "dataset_dir": "data/nnunet_raw/Dataset513_CURVASPancreasOOF_Fold2",
+      "numTraining": 48,
+      "numHeldOut": 12,
+      "train": [
+        "UKCHLL001",
+        "UKCHLL005",
+        "UKCHLL007",
+        "UKCHLL008",
+        "UKCHLL009",
+        "UKCHLL010",
+        "UKCHLL018",
+        "UKCHLL021",
+        "UKCHLL023",
+        "UKCHLL026",
+        "UKCHLL027",
+        "UKCHLL028",
+        "UKCHLL030",
+        "UKCHLL032",
+        "UKCHLL034",
+        "UKCHLL038",
+        "UKCHLL041",
+        "UKCHLL042",
+        "UKCHLL043",
+        "UKCHLL045",
+        "UKCHLL048",
+        "UKCHLL051",
+        "UKCHLL052",
+        "UKCHLL055",
+        "UKCHLL058",
+        "UKCHLL062",
+        "UKCHLL064",
+        "UKCHLL066",
+        "UKCHLL067",
+        "UKCHLL069",
+        "UKCHLL070",
+        "UKCHLL073",
+        "UKCHLL076",
+        "UKCHLL077",
+        "UKCHLL078",
+        "UKCHLL084",
+        "UKCHLL089",
+        "UKCHLL091",
+        "UKCHLL094",
+        "UKCHLL095",
+        "UKCHLL096",
+        "UKCHLL099",
+        "UKCHLL103",
+        "UKCHLL105",
+        "UKCHLL106",
+        "UKCHLL111",
+        "UKCHLL112",
+        "UKCHLL113"
+      ],
+      "held_out": [
+        "UKCHLL025",
+        "UKCHLL031",
+        "UKCHLL035",
+        "UKCHLL049",
+        "UKCHLL083",
+        "UKCHLL087",
+        "UKCHLL092",
+        "UKCHLL102",
+        "UKCHLL104",
+        "UKCHLL107",
+        "UKCHLL108",
+        "UKCHLL110"
+      ],
+      "held_out_inputs": [
+        {
+          "case_id": "UKCHLL025",
+          "image": "data/nnunet_raw/Dataset501_CURVASPancreasOOF/imagesTr/UKCHLL025_0000.nii.gz"
+        },
+        {
+          "case_id": "UKCHLL031",
+          "image": "data/nnunet_raw/Dataset501_CURVASPancreasOOF/imagesTr/UKCHLL031_0000.nii.gz"
+        },
+        {
+          "case_id": "UKCHLL035",
+          "image": "data/nnunet_raw/Dataset501_CURVASPancreasOOF/imagesTr/UKCHLL035_0000.nii.gz"
+        },
+        {
+          "case_id": "UKCHLL049",
+          "image": "data/nnunet_raw/Dataset501_CURVASPancreasOOF/imagesTr/UKCHLL049_0000.nii.gz"
+        },
+        {
+          "case_id": "UKCHLL083",
+          "image": "data/nnunet_raw/Dataset501_CURVASPancreasOOF/imagesTr/UKCHLL083_0000.nii.gz"
+        },
+        {
+          "case_id": "UKCHLL087",
+          "image": "data/nnunet_raw/Dataset501_CURVASPancreasOOF/imagesTr/UKCHLL087_0000.nii.gz"
+        },
+        {
+          "case_id": "UKCHLL092",
+          "image": "data/nnunet_raw/Dataset501_CURVASPancreasOOF/imagesTr/UKCHLL092_0000.nii.gz"
+        },
+        {
+          "case_id": "UKCHLL102",
+          "image": "data/nnunet_raw/Dataset501_CURVASPancreasOOF/imagesTr/UKCHLL102_0000.nii.gz"
+        },
+        {
+          "case_id": "UKCHLL104",
+          "image": "data/nnunet_raw/Dataset501_CURVASPancreasOOF/imagesTr/UKCHLL104_0000.nii.gz"
+        },
+        {
+          "case_id": "UKCHLL107",
+          "image": "data/nnunet_raw/Dataset501_CURVASPancreasOOF/imagesTr/UKCHLL107_0000.nii.gz"
+        },
+        {
+          "case_id": "UKCHLL108",
+          "image": "data/nnunet_raw/Dataset501_CURVASPancreasOOF/imagesTr/UKCHLL108_0000.nii.gz"
+        },
+        {
+          "case_id": "UKCHLL110",
+          "image": "data/nnunet_raw/Dataset501_CURVASPancreasOOF/imagesTr/UKCHLL110_0000.nii.gz"
+        }
+      ]
+    },
+    {
+      "fold": 3,
+      "dataset_id": 514,
+      "dataset_name": "CURVASPancreasOOF_Fold3",
+      "dataset_dir": "data/nnunet_raw/Dataset514_CURVASPancreasOOF_Fold3",
+      "numTraining": 48,
+      "numHeldOut": 12,
+      "train": [
+        "UKCHLL001",
+        "UKCHLL005",
+        "UKCHLL007",
+        "UKCHLL008",
+        "UKCHLL009",
+        "UKCHLL010",
+        "UKCHLL018",
+        "UKCHLL021",
+        "UKCHLL023",
+        "UKCHLL025",
+        "UKCHLL027",
+        "UKCHLL030",
+        "UKCHLL031",
+        "UKCHLL032",
+        "UKCHLL034",
+        "UKCHLL035",
+        "UKCHLL042",
+        "UKCHLL043",
+        "UKCHLL045",
+        "UKCHLL048",
+        "UKCHLL049",
+        "UKCHLL052",
+        "UKCHLL055",
+        "UKCHLL058",
+        "UKCHLL062",
+        "UKCHLL064",
+        "UKCHLL067",
+        "UKCHLL069",
+        "UKCHLL070",
+        "UKCHLL073",
+        "UKCHLL076",
+        "UKCHLL083",
+        "UKCHLL087",
+        "UKCHLL089",
+        "UKCHLL091",
+        "UKCHLL092",
+        "UKCHLL095",
+        "UKCHLL096",
+        "UKCHLL099",
+        "UKCHLL102",
+        "UKCHLL103",
+        "UKCHLL104",
+        "UKCHLL105",
+        "UKCHLL107",
+        "UKCHLL108",
+        "UKCHLL110",
+        "UKCHLL111",
+        "UKCHLL113"
+      ],
+      "held_out": [
+        "UKCHLL026",
+        "UKCHLL028",
+        "UKCHLL038",
+        "UKCHLL041",
+        "UKCHLL051",
+        "UKCHLL066",
+        "UKCHLL077",
+        "UKCHLL078",
+        "UKCHLL084",
+        "UKCHLL094",
+        "UKCHLL106",
+        "UKCHLL112"
+      ],
+      "held_out_inputs": [
+        {
+          "case_id": "UKCHLL026",
+          "image": "data/nnunet_raw/Dataset501_CURVASPancreasOOF/imagesTr/UKCHLL026_0000.nii.gz"
+        },
+        {
+          "case_id": "UKCHLL028",
+          "image": "data/nnunet_raw/Dataset501_CURVASPancreasOOF/imagesTr/UKCHLL028_0000.nii.gz"
+        },
+        {
+          "case_id": "UKCHLL038",
+          "image": "data/nnunet_raw/Dataset501_CURVASPancreasOOF/imagesTr/UKCHLL038_0000.nii.gz"
+        },
+        {
+          "case_id": "UKCHLL041",
+          "image": "data/nnunet_raw/Dataset501_CURVASPancreasOOF/imagesTr/UKCHLL041_0000.nii.gz"
+        },
+        {
+          "case_id": "UKCHLL051",
+          "image": "data/nnunet_raw/Dataset501_CURVASPancreasOOF/imagesTr/UKCHLL051_0000.nii.gz"
+        },
+        {
+          "case_id": "UKCHLL066",
+          "image": "data/nnunet_raw/Dataset501_CURVASPancreasOOF/imagesTr/UKCHLL066_0000.nii.gz"
+        },
+        {
+          "case_id": "UKCHLL077",
+          "image": "data/nnunet_raw/Dataset501_CURVASPancreasOOF/imagesTr/UKCHLL077_0000.nii.gz"
+        },
+        {
+          "case_id": "UKCHLL078",
+          "image": "data/nnunet_raw/Dataset501_CURVASPancreasOOF/imagesTr/UKCHLL078_0000.nii.gz"
+        },
+        {
+          "case_id": "UKCHLL084",
+          "image": "data/nnunet_raw/Dataset501_CURVASPancreasOOF/imagesTr/UKCHLL084_0000.nii.gz"
+        },
+        {
+          "case_id": "UKCHLL094",
+          "image": "data/nnunet_raw/Dataset501_CURVASPancreasOOF/imagesTr/UKCHLL094_0000.nii.gz"
+        },
+        {
+          "case_id": "UKCHLL106",
+          "image": "data/nnunet_raw/Dataset501_CURVASPancreasOOF/imagesTr/UKCHLL106_0000.nii.gz"
+        },
+        {
+          "case_id": "UKCHLL112",
+          "image": "data/nnunet_raw/Dataset501_CURVASPancreasOOF/imagesTr/UKCHLL112_0000.nii.gz"
+        }
+      ]
+    },
+    {
+      "fold": 4,
+      "dataset_id": 515,
+      "dataset_name": "CURVASPancreasOOF_Fold4",
+      "dataset_dir": "data/nnunet_raw/Dataset515_CURVASPancreasOOF_Fold4",
+      "numTraining": 48,
+      "numHeldOut": 12,
+      "train": [
+        "UKCHLL005",
+        "UKCHLL007",
+        "UKCHLL009",
+        "UKCHLL010",
+        "UKCHLL025",
+        "UKCHLL026",
+        "UKCHLL027",
+        "UKCHLL028",
+        "UKCHLL031",
+        "UKCHLL034",
+        "UKCHLL035",
+        "UKCHLL038",
+        "UKCHLL041",
+        "UKCHLL042",
+        "UKCHLL043",
+        "UKCHLL045",
+        "UKCHLL048",
+        "UKCHLL049",
+        "UKCHLL051",
+        "UKCHLL066",
+        "UKCHLL067",
+        "UKCHLL069",
+        "UKCHLL070",
+        "UKCHLL073",
+        "UKCHLL076",
+        "UKCHLL077",
+        "UKCHLL078",
+        "UKCHLL083",
+        "UKCHLL084",
+        "UKCHLL087",
+        "UKCHLL089",
+        "UKCHLL091",
+        "UKCHLL092",
+        "UKCHLL094",
+        "UKCHLL095",
+        "UKCHLL096",
+        "UKCHLL099",
+        "UKCHLL102",
+        "UKCHLL103",
+        "UKCHLL104",
+        "UKCHLL105",
+        "UKCHLL106",
+        "UKCHLL107",
+        "UKCHLL108",
+        "UKCHLL110",
+        "UKCHLL111",
+        "UKCHLL112",
+        "UKCHLL113"
+      ],
+      "held_out": [
+        "UKCHLL001",
+        "UKCHLL008",
+        "UKCHLL018",
+        "UKCHLL021",
+        "UKCHLL023",
+        "UKCHLL030",
+        "UKCHLL032",
+        "UKCHLL052",
+        "UKCHLL055",
+        "UKCHLL058",
+        "UKCHLL062",
+        "UKCHLL064"
+      ],
+      "held_out_inputs": [
+        {
+          "case_id": "UKCHLL001",
+          "image": "data/nnunet_raw/Dataset501_CURVASPancreasOOF/imagesTr/UKCHLL001_0000.nii.gz"
+        },
+        {
+          "case_id": "UKCHLL008",
+          "image": "data/nnunet_raw/Dataset501_CURVASPancreasOOF/imagesTr/UKCHLL008_0000.nii.gz"
+        },
+        {
+          "case_id": "UKCHLL018",
+          "image": "data/nnunet_raw/Dataset501_CURVASPancreasOOF/imagesTr/UKCHLL018_0000.nii.gz"
+        },
+        {
+          "case_id": "UKCHLL021",
+          "image": "data/nnunet_raw/Dataset501_CURVASPancreasOOF/imagesTr/UKCHLL021_0000.nii.gz"
+        },
+        {
+          "case_id": "UKCHLL023",
+          "image": "data/nnunet_raw/Dataset501_CURVASPancreasOOF/imagesTr/UKCHLL023_0000.nii.gz"
+        },
+        {
+          "case_id": "UKCHLL030",
+          "image": "data/nnunet_raw/Dataset501_CURVASPancreasOOF/imagesTr/UKCHLL030_0000.nii.gz"
+        },
+        {
+          "case_id": "UKCHLL032",
+          "image": "data/nnunet_raw/Dataset501_CURVASPancreasOOF/imagesTr/UKCHLL032_0000.nii.gz"
+        },
+        {
+          "case_id": "UKCHLL052",
+          "image": "data/nnunet_raw/Dataset501_CURVASPancreasOOF/imagesTr/UKCHLL052_0000.nii.gz"
+        },
+        {
+          "case_id": "UKCHLL055",
+          "image": "data/nnunet_raw/Dataset501_CURVASPancreasOOF/imagesTr/UKCHLL055_0000.nii.gz"
+        },
+        {
+          "case_id": "UKCHLL058",
+          "image": "data/nnunet_raw/Dataset501_CURVASPancreasOOF/imagesTr/UKCHLL058_0000.nii.gz"
+        },
+        {
+          "case_id": "UKCHLL062",
+          "image": "data/nnunet_raw/Dataset501_CURVASPancreasOOF/imagesTr/UKCHLL062_0000.nii.gz"
+        },
+        {
+          "case_id": "UKCHLL064",
+          "image": "data/nnunet_raw/Dataset501_CURVASPancreasOOF/imagesTr/UKCHLL064_0000.nii.gz"
+        }
+      ]
+    }
+  ]
+}

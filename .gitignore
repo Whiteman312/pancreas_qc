@@ -8,6 +8,7 @@ __pycache__/
 data/raw/**
 data/extracted/**
 data/derived/**
+data/nnunet_raw/**
 data/interim/**
 data/processed/**
 artifacts/**

@@ -1,1 +1,36 @@
-# TODO: Configure CURVAS and QUBIQ data paths, labels, and spatial checks.
+# Frozen inputs for the first CURVAS OOF segmentation experiment.
+# Do not change the seed, quotas, or patient assignments after training starts.
+curvas:
+  manifest: data/manifests/curvas_oof_label_manifest.csv
+  dispositions: data/manifests/curvas_case_dispositions.csv
+  split_manifest: data/manifests/curvas_patient_split.json
+  seed: 20260925
+  counts:
+    train: 60
+    calibration: 10
+    test: 20
+  # Approximate the 60/10/20 proportions within each original CURVAS archive.
+  # Original archive names are provenance, not the experimental split.
+  source_quotas:
+    training_set: {train: 13, calibration: 2, test: 5}
+    validation_set: {train: 3, calibration: 1, test: 1}
+    testing_set: {train: 44, calibration: 7, test: 14}
+  oof_folds: 5
+  nnunet:
+    raw_root: data/nnunet_raw
+    dataset_id: 501
+    dataset_name: CURVASPancreasOOF
+    # Dataset501 is staging only. Plan each 48-patient task independently.
+    fold_tasks:
+      split_sha256: 3660d71c9db5d7f407f3649d49fb3a2c1be87feb28588e160a70aa9c74a5a316
+      manifest: data/manifests/curvas_oof_tasks.json
+      export_manifest: data/manifests/curvas_oof_task_export.csv
+      link_mode: relative_symlink
+      # Do not run another five-fold split inside a 48-patient task.
+      training_fold: "all"
+      datasets:
+        - {fold: 0, dataset_id: 511, dataset_name: CURVASPancreasOOF_Fold0}
+        - {fold: 1, dataset_id: 512, dataset_name: CURVASPancreasOOF_Fold1}
+        - {fold: 2, dataset_id: 513, dataset_name: CURVASPancreasOOF_Fold2}
+        - {fold: 3, dataset_id: 514, dataset_name: CURVASPancreasOOF_Fold3}
+        - {fold: 4, dataset_id: 515, dataset_name: CURVASPancreasOOF_Fold4}

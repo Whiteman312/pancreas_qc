@@ -1,3 +1,4 @@
 case_id,decision,majority_mask,automated_qc,manual_overlay_review,decision_date,note
 UKCHLL007,RETAIN_CT_SPACE_MAJORITY,data/derived/curvas/pancreas_majority_vote/UKCHLL007.nii.gz,REVIEW_HEADER_MISMATCH,NOT_DONE,2026-09-25,按用户指示保留病例及现有CT空间多数票掩膜；原annotation_2空间头异常仍需保留记录
 UKCHLL008,RETAIN_CT_SPACE_MAJORITY,data/derived/curvas/pancreas_majority_vote/UKCHLL008.nii.gz,PASS_AUTOMATED,NOT_DONE,2026-09-25,按用户指示保留病例及现有CT空间多数票掩膜
+UKCHLL082,RETAIN_CT_SPACE_MAJORITY,data/derived/curvas/pancreas_majority_vote/UKCHLL082.nii.gz,REVIEW_EMPTY_EXPERT,NOT_DONE,2026-09-25,按用户指示保留病例及现有两名非空专家交集形成的多数票掩膜；第三位专家胰腺标注为空的警告保留
